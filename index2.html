@@ -21,8 +21,8 @@
             overflow: hidden;
         }
         .iframe-container {
-            width: 100%; /* 100% del ancho de la pantalla */
-            height: 100%; /* 100% de la altura de la pantalla */
+            width: 100%; /* Ancho ajustado */
+            height: 100%; /* Altura ajustada */
             overflow: auto; /* Permite el desplazamiento */
             position: relative;
             display: flex;
@@ -30,10 +30,10 @@
             align-items: flex-start; /* Alinea al principio para ver la parte superior */
         }
         iframe {
-            width: 150%; /* Aumentamos el ancho para el zoom */
-            height: 150%; /* Aumentamos la altura para el zoom */
+            width: 120%; /* Ancho más reducido */
+            height: 120%; /* Aumento de altura */
             border: none;
-            transform: scale(1.5); /* Zoom del 150% */
+            transform: scale(1.2); /* Zoom del 120% */
             transform-origin: top center; /* Centra el zoom desde la parte superior */
         }
     </style>
@@ -42,7 +42,7 @@
 
     <div class="iframe-container">
         <iframe loading="lazy"
-            src="https://www.canva.com/design/DAGezpzCYO8/HSTbQuqccqhUAJgNjisCRg/view?embed">
+            src="https://www.canva.com/design/DAGEzpzCYO8/HSTbQuqccqhUAJgNjisCRg/view?embed">
         </iframe>
     </div>
 
