@@ -14,7 +14,7 @@
         body {
             width: 100vw;
             height: 100vh;
-            background-color: #000; /* Fondos laterales negros */
+            background-color: #000; /* Fondo negro */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -22,19 +22,18 @@
         }
         .iframe-container {
             width: 90vw; /* Ancho ajustado */
-            max-width: 600px; /* Máximo ancho */
             height: 90vh; /* Altura ajustada */
             display: flex;
             justify-content: center;
             align-items: center;
-            overflow: hidden;
+            overflow: auto; /* Permite desplazamiento vertical y horizontal */
             position: relative;
         }
         iframe {
-            width: 120%; /* Ancho mayor para el zoom */
-            height: 120%; /* Altura ajustada para el zoom */
+            width: 150%; /* Aumentamos el ancho para hacer zoom */
+            height: 150%; /* Aumentamos la altura para hacer zoom */
             border-radius: 10px; /* Bordes redondeados */
-            transform: scale(1.2); /* Zoom del 120% */
+            transform: scale(1.5); /* Zoom del 150% */
             transform-origin: center; /* Centra el zoom */
         }
     </style>
