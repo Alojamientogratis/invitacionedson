@@ -25,13 +25,16 @@
             height: 100%; /* 100% de la altura de la pantalla */
             overflow: auto; /* Permite el desplazamiento */
             position: relative;
+            display: flex;
+            justify-content: center; /* Centra el contenido */
+            align-items: flex-start; /* Alinea al principio para ver la parte superior */
         }
         iframe {
             width: 150%; /* Aumentamos el ancho para el zoom */
             height: 150%; /* Aumentamos la altura para el zoom */
             border: none;
             transform: scale(1.5); /* Zoom del 150% */
-            transform-origin: 0 0; /* Centra el zoom en la esquina superior izquierda */
+            transform-origin: top center; /* Centra el zoom desde la parte superior */
         }
     </style>
 </head>
